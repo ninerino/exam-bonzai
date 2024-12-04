@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Bonz.ai - Boka rum</title>
+</head>
+<body>
+	<div class="site__wrapper">
+		<header class="site-header">
+			<section class="site-header__image" aria-label="Headerbild">
+				<img class="site-header__image-img" src="./assets/logo/bonz.ai-logo-black-landscape.png" alt="Bild på bonz.ais logotyp samt texten bonz.ai">
+			</section>
+			<section class="site-header__nav" aria-label="Navigationsmeny">
+				<ul class="site-header__list">
+					<li class="site-header__item">
+						<a class="site-header__links" href="#">
+							HEM
+						</a>
+					</li>
+					<li class="site-header__item">
+						<a class="site-header__links" href="boka_rum.html">
+							BOKA RUM
+						</a>
+					</li>
+					<li class="site-header__item">
+						<a class="site-header__links" href="#">
+							OM BONZ.AI
+						</a>
+					</li>
+				</ul>
+			</section>
+		</header>
+
+		<section class="hero">
+
+			<section class="hero__booking">
+				<section class="hero__stay-form" aria-label="Input-form för vistelse">
+
+					<form class="hero__stay-form-input">
+						<label for="stay">Ankomstdatum</label>
+						<input type="date" class="input" id="stay" min="2024-11-26">
+
+						<label for="leave">Avresedatum</label>
+						<input type="date" class="input" id="leave" max="2024-12-24">
+					</form>
+
+					<form class="hero__stay-form-input">
+						<label for="adults">Antal vuxna</label>
+						<select id="adults" class="input" name="adults">
+							<option value="1">1 vuxen</option>
+							<option selected value="2">2 vuxna</option>
+							<option value="3">3 vuxna</option>
+							<option value="4">4 vuxna</option>
+						</select>
+						<label for="children">Antal barn</label>
+						<select id="children" class="input" name="children">
+							<option value="0">0 barn</option>
+							<option value="1">2 barn</option>
+							<option value="2">3 barn</option>
+							<option value="3">4 barn</option>
+						</select>
+					</form>
+
+				</section>
+
+				<section class="hero__cta-btn" aria-label="Call to Action-knapp">
+					<button class="cta-btn">Se lediga rum & priser</button>
+				</section>
+
+			</section>
+
+			<section class="room-selection">
+				<article class="room-selection__option">
+					<img class="image-grid__image" src="./assets/photos/01-day.jpg">
+
+					<article class="room-selection__header">
+						<h2>Singelrum</h2>
+						<h3>1000 kr</h3>
+					</article>
+
+					<article class="room-selection__details">
+						<p class="room-selection__info">24 kvm</p>
+						<p class="room-selection__info">Enkelsäng</p>
+						<p class="room-selection__info">Dusch i rummet</p>
+						<p class="room-selection__info">Wifi och frukost ingår</p>
+					</article>
+					<button class="cta-btn">Boka nu</button>
+				</article>
+
+				<article class="room-selection__option">
+					<img class="image-grid__image image-grid__image--room" src="./assets/photos/01-day.jpg">
+
+					<article class="room-selection__header">
+						<h2>Singelrum</h2>
+						<h3>1000 kr</h3>
+					</article>
+
+					<article class="room-selection__details">
+						<p class="room-selection__info">24 kvm</p>
+						<p class="room-selection__info">Enkelsäng</p>
+						<p class="room-selection__info">Dusch i rummet</p>
+						<p class="room-selection__info">Wifi och frukost ingår</p>
+					</article>
+					<button class="cta-btn">Boka nu</button>
+				</article>
+
+				<article class="room-selection__option">
+					<img class="image-grid__image" src="./assets/photos/01-day.jpg">
+
+					<article class="room-selection__header">
+						<h2>Singelrum</h2>
+						<h3>1000 kr</h3>
+					</article>
+
+					<article class="room-selection__details">
+						<p class="room-selection__info">24 kvm</p>
+						<p class="room-selection__info">Enkelsäng</p>
+						<p class="room-selection__info">Dusch i rummet</p>
+						<p class="room-selection__info">Wifi och frukost ingår</p>
+					</article>
+					<button class="cta-btn">Boka nu</button>
+				</article>
+
+			</section>
+
+			<section class="information">
+				<article class="information__included">
+				<h2>Det här ingår alltid hos oss</h2>
+				<ul class="information__list">
+					<li><strong>Gratis Wi-Fi</strong> – Hög hastighet för att hålla dig uppkopplad.</li>
+					<li><strong>Frukostbuffé</strong> – Njut av en hälsosam och varierad frukost varje morgon.</li>
+					<li><strong>24/7 Digital Concierge</strong> – Få hjälp när som helst via vår AI-assistent direkt i mobilen.</li>
+					<li><strong>Daglig städning</strong> – Rummen städas varje dag för att säkerställa din komfort.</li>
+					<li><strong>Smarta rumsfunktioner</strong> – Justera belysning, temperatur och musik med vår app.</li>
+				</ul>
+			</article>
+			<article class="information__unique">
+				<h2>Våra unika funktioner</h2>
+				<ul class="information__list">
+					<li><strong>Kontaktlös incheckning & utcheckning</strong> – Checka in och ut när du vill, helt utan krångel.</li>
+					<li><strong>Personliga tips</strong> – Restauranger, aktiviteter och sevärdheter anpassade för dig.</li>
+					<li><strong>Automatiserade rum</strong> – Våra rum lär sig dina rutiner och anpassar sig efter dina behov.</li>
+				</ul>
+			</article>
+			</section>
+
+		</section>
+
+			<footer class="site-footer">
+				<section class="site-footer__nav">
+					<ul class="site-footer__nav-list">
+						<h1>Navigation</h1>
+						<li class="site-footer__item"><a class="site-footer__links" href="index.html">Hem</a></li>
+						<li class="site-footer__item"><a class="site-footer__links" href="boka_rum.html">Boka rum</a></li>
+						<li class="site-footer__item"><a class="site-footer__links" href="index.html">Om bonz.ai</a></li>
+					</ul>
+				</section>
+				<section class="site-footer__hitta-hit">
+					<h1>Hitta hit</h1>
+					<p>Trädvägen 13</p>
+					<p>123 45 Ek-erö</p>
+				</section>
+				<section class="site-footer__social-media">
+					<h1>Sociala medier</h1>
+					<p>Länk här</p>
+				</section>
+			</footer>
+
+	</div>
+</body>
+</html>

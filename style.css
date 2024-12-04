@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	--main-bg-color: #ecf0f1;
+	--main-text-color: #2c3e50;
+	--secondary-text-color: #7f8c8d;
+}
+
+.site__wrapper {
+	background-color: var(--main-bg-color);
+	font-family: 'Raleway';
+}
+
+
+/** index.html **/
+
+/** Site Header **/
+
+.site-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.site-header__image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0.5rem;
+}
+
+.site-header__image-img {
+	height: 2rem;
+}
+
+.site-header__nav {
+	display: flex;
+	align-items: center;
+
+}
+
+.site-header__list {
+	display: flex;
+	list-style: none;
+}
+
+.site-header__item {
+	margin: 0 15px;
+	padding: 0.5rem;
+}
+
+.site-header__links {
+	text-decoration: none;
+	color: black;
+}
+
+.site-header__item:hover {
+	background-color: #34495e;
+}
+
+.site-header__links:hover {
+	color: white;
+}
+
+/** Site Hero **/
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.hero__booking {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #34495e;
+	width: 100%;
+	height: auto;
+	color: white;
+	padding: 1.5rem;
+	gap: 4rem;
+	flex-wrap: wrap;
+}
+
+.hero__stay-form {
+	display: flex;
+	gap: 2rem;
+}
+
+.hero__stay-form-input {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.input {
+	height: 2rem;
+	font-family: 'Montserrat';
+	border: none;
+	border-radius: 5px;
+	padding: 0.2rem 0.5rem;
+	background-color: white;
+	color: #34495e;
+}
+
+.hero__title {
+	font-size: 48px;
+	color: var(--main-text-color);
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.hero__description {
+	font-family: 'Raleway', serif;
+	margin-bottom: 1.5rem;
+	font-size: 1rem;
+	max-width: 85%;
+	}
+
+/** Call to Action-knapp **/
+
+.cta-btn {
+	padding: 0.75rem 1.5rem;
+	background-color: green;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+/** Image grid **/
+
+.image-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1rem;
+	margin: auto;
+	justify-content: center;
+	margin-bottom: 1rem;
+	max-width: 70%;
+}
+
+.image-grid__item {
+	justify-self: center;
+	align-content: center;
+	width: 100%;
+}
+
+.image-grid__image {
+	height: 10rem;
+	object-fit: cover;
+	border-radius: 1rem;
+	border: 1px solid black;
+}
+
+/** Footer **/
+
+.site-footer {
+	background-color: #34495e;
+	display: flex;
+	justify-content: space-around;
+	padding: 1.5rem;
+	color: white;
+}
+
+.site-footer__nav-list {
+	list-style: none;
+}
+
+.site-footer__item {
+	margin-bottom: 0.3rem;
+}
+
+.site-footer__links {
+	text-decoration: none;
+	color: white;
+}
+
+/** Media Queries för index.html **/
+
+@media (max-width: 900px) {
+	.image-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.site-header {
+		flex-direction: column;
+	}
+
+	.site-header__nav {
+		justify-content: center;
+	}
+
+
+}
+
+@media (max-width: 600px) {
+	.site__wrapper {
+		padding: 0;
+	}
+
+	.image-grid {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		margin: 0 auto;
+		max-width: 70%;
+	}
+
+	.image-grid__item:nth-child(n+4) { /* Visa bara tre bilder i mobilvy så inte användaren behöver scrolla i 30 år */
+		display: none;
+	}
+
+	.site-footer {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 1rem;
+	}
+
+}
+/** ------------- boka_rum.html ------------- **/
+
+.room-selection {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 2rem;
+	margin: 2rem 0 2rem 0;
+}
+
+.room-selection__option, .information {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	gap: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.room-selection__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.room-selection__info {
+	margin-bottom: 0.5rem;
+}
+
+.information {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 65%;
+	margin-bottom: 2rem;
+}
+
+.information__list {
+	list-style-type: none;
+	margin: 1rem 1rem 2rem 0;
+}
+
+/** Media queries för boka_rum.html */
+
+@media (max-width: 900px) {
+	.room-selection {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 600px) {
+	.room-selection {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.site__wrapper {
+		padding: 0;
+	}
+
+	.information {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+}

@@ -1,144 +1,204 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<title>Bonz.ai - Framtidens hotell</title>
-</head>
-<body>
-	<div class="site__wrapper">
-		<header class="site-header">
-			<section class="site-header__image" aria-label="Headerbild">
-				<img class="site-header__image-img" src="./assets/logo/bonz.ai-logo-black-landscape.png" alt="Bild på bonz.ais logotyp samt texten bonz.ai">
-			</section>
-			<section class="site-header__nav" aria-label="Navigationsmeny">
-				<ul class="site-header__list">
-					<li class="site-header__item">
-						<a class="site-header__links" href="#">
-							HEM
-						</a>
-					</li>
-					<li class="site-header__item">
-						<a class="site-header__links" href="boka_rum.html">
-							BOKA RUM
-						</a>
-					</li>
-					<li class="site-header__item">
-						<a class="site-header__links" href="#">
-							OM BONZ.AI
-						</a>
-					</li>
-				</ul>
-			</section>
-		</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bonz.ai - Framtidens hotell</title>
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <header class="site-header">
+        <section class="site-header__image" aria-label="Headerbild">
+          <img
+            class="site-header__image-img"
+            src="./assets/logo/bonz.ai-logo-black-landscape.png"
+            alt="Bild på bonz.ais logotyp samt texten bonz.ai"
+          />
+        </section>
+        <section class="site-header__nav" aria-label="Navigationsmeny">
+          <ul class="site-header__list">
+            <li class="site-header__item">
+              <a class="site-header__links" href="#"> HEM </a>
+            </li>
+            <li class="site-header__item">
+              <a class="site-header__links" href="boka_rum.html"> BOKA RUM </a>
+            </li>
+            <li class="site-header__item">
+              <a class="site-header__links" href="#"> OM BONZ.AI </a>
+            </li>
+          </ul>
+        </section>
+      </header>
 
-		<section class="hero">
+      <section class="hero">
+        <section
+          class="hero__booking"
+          aria-label="Område för att söka efter rum"
+        >
+          <section class="hero__stay-form" aria-label="Input-form för vistelse">
+            <form class="hero__stay-form-input">
+              <label for="stay">Ankomstdatum</label>
+              <input type="date" class="input" id="stay" min="2024-11-26" />
 
-			<section class="hero__booking">
-				<section class="hero__stay-form" aria-label="Input-form för vistelse">
+              <label for="leave">Avresedatum</label>
+              <input type="date" class="input" id="leave" max="2024-12-24" />
+            </form>
 
-					<form class="hero__stay-form-input">
-						<label for="stay">Ankomstdatum</label>
-						<input type="date" class="input" id="stay" min="2024-11-26">
+            <form class="hero__stay-form-input">
+              <label for="adults">Antal vuxna</label>
+              <select id="adults" class="input" name="adults">
+                <option value="1">1 vuxen</option>
+                <option selected value="2">2 vuxna</option>
+                <option value="3">3 vuxna</option>
+                <option value="4">4 vuxna</option>
+              </select>
+              <label for="children">Antal barn</label>
+              <select id="children" class="input" name="children">
+                <option value="0">0 barn</option>
+                <option value="1">1 barn</option>
+                <option value="2">2 barn</option>
+                <option value="3">3 barn</option>
+              </select>
+            </form>
+          </section>
 
-						<label for="leave">Avresedatum</label>
-						<input type="date" class="input" id="leave" max="2024-12-24">
-					</form>
+          <section class="hero__cta-btn" aria-label="Call to Action-knapp">
+            <a href="boka_rum.html" class="cta-btn">Se lediga rum & priser</a>
+          </section>
+        </section>
+        <h1 class="hero__title">Upplev framtidens hotell</h1>
+        <p class="hero__description">
+          På Bonz.ai tar vi hotellupplevelsen till en ny nivå genom att förena
+          banbrytande teknologi med hållbarhet. Vårt hotell är inte bara ett
+          boende – det är en upplevelse som sätter dig i centrum. Med hjälp av
+          AI skapar vi skräddarsydda vistelser som anpassar sig efter dina
+          behov, samtidigt som vi minimerar vår miljöpåverkan. Från smarta
+          energilösningar och återvunna material till digital
+          concierge-tjänster, är varje detalj designad för att ge dig en bekväm,
+          innovativ och grön upplevelse.
+        </p>
 
-					<form class="hero__stay-form-input">
-						<label for="adults">Antal vuxna</label>
-						<select id="adults" class="input" name="adults">
-							<option value="1">1 vuxen</option>
-							<option selected value="2">2 vuxna</option>
-							<option value="3">3 vuxna</option>
-							<option value="4">4 vuxna</option>
-						</select>
-						<label for="children">Antal barn</label>
-						<select id="children" class="input" name="children">
-							<option value="0">0 barn</option>
-							<option value="1">1 barn</option>
-							<option value="2">2 barn</option>
-							<option value="3">3 barn</option>
-						</select>
-					</form>
+        <p class="hero__description">
+          Hos Bonz.ai behöver du inte kompromissa mellan lyx och
+          miljömedvetenhet. Här kan du koppla av i en modern miljö, uppleva
+          toppmodern teknik och veta att du gör ett hållbart val. Låt oss
+          välkomna dig till en värld där framtidens hotell inte bara är en
+          vision – det är verklighet.
+        </p>
 
-				</section>
+        <p class="hero__description">
+          På Bonz.ai handlar det inte bara om att bo – det handlar om att
+          uppleva. Våra AI-drivna rum anpassar belysning, temperatur och musik
+          efter dina önskemål, medan vår virtuella concierge står redo att
+          hjälpa dig med allt från bokningar till personliga rekommendationer.
+          Utforska världen genom VR-turer eller njut av vårt smarta
+          wellness-koncept med sömnanpassade sängar och guidad meditation. Allt
+          är designat för att ge dig en skräddarsydd och minnesvärd vistelse.
+        </p>
 
-				<section class="hero__cta-btn" aria-label="Call to Action-knapp">
-					<button class="cta-btn">Se lediga rum & priser</button>
-				</section>
+        <p class="hero__description">
+          Vi kombinerar teknologi med hållbarhet i allt vi gör. Från ekologiska
+          menyer och möbler av återvunna material till koldioxidneutral
+          energiförsörjning – varje detalj är ett steg mot en bättre framtid.
+          Som gäst hos oss bidrar du också, genom initiativ som klimatpositiva
+          bokningar och vårt belöningsprogram för hållbara val. Bonz.ai är mer
+          än ett hotell – det är ett löfte om innovation, miljöansvar och lyx i
+          harmoni.
+        </p>
+      </section>
 
-			</section>
-			<h1 class="hero__title">
-				Upplev framtidens hotell
-			</h1>
-			<p class="hero__description">
-				På Bonz.ai tar vi hotellupplevelsen till en ny nivå genom att förena banbrytande teknologi med hållbarhet. Vårt hotell är inte bara ett boende – det är en upplevelse som sätter dig i centrum. Med hjälp av AI skapar vi skräddarsydda vistelser som anpassar sig efter dina behov, samtidigt som vi minimerar vår miljöpåverkan. Från smarta energilösningar och återvunna material till digital concierge-tjänster, är varje detalj designad för att ge dig en bekväm, innovativ och grön upplevelse.
-			</p>
+      <section class="image-grid" aria-label="Bildgrid">
+        <article class="image-grid__item" aria-label="Bild i bildgrid">
+          <img
+            class="image-grid__image"
+            src="./assets/photos/01-day.jpg"
+            alt="Bild på hotellrum med stege och bord"
+          />
+        </article>
+        <article class="image-grid__item" aria-label="Bild i bildgrid">
+          <img
+            class="image-grid__image"
+            src="./assets/photos/02-day.jpg"
+            alt="Bild på hotellrum med eldstad och utsikt över vatten"
+          />
+        </article>
+        <article class="image-grid__item" aria-label="Bild i bildgrid">
+          <img
+            class="image-grid__image"
+            src="./assets/photos/03-day.jpg"
+            alt="Bild på säng med utsikt över vatten"
+          />
+        </article>
+        <article class="image-grid__item" aria-label="Bild i bildgrid">
+          <img
+            class="image-grid__image"
+            src="./assets/photos/04-day.jpg"
+            alt="Bild på hotellrum med säng, utifrån"
+          />
+        </article>
+        <article class="image-grid__item" aria-label="Bild i bildgrid">
+          <img
+            class="image-grid__image"
+            src="./assets/photos/05-day.jpg"
+            alt="Bild på soffa och trappa i hotellrum"
+          />
+        </article>
+        <article class="image-grid__item" aria-label="Bild i bildgrid">
+          <img
+            class="image-grid__image"
+            src="./assets/photos/06-day.jpg"
+            alt="Bild på entré till hotellrum"
+          />
+        </article>
+        <article class="image-grid__item" aria-label="Bild i bildgrid">
+          <img
+            class="image-grid__image"
+            src="./assets/photos/07-day.jpg"
+            alt="Bild tagen på undervåning från övervåning på hotellrum"
+          />
+        </article>
+        <article class="image-grid__item" aria-label="Bild i bildgrid">
+          <img
+            class="image-grid__image"
+            src="./assets/photos/08-day.jpg"
+            alt="Bild på eldstad från entré"
+          />
+        </article>
+        <article class="image-grid__item" aria-label="Bild i bildgrid">
+          <img
+            class="image-grid__image"
+            src="./assets/photos/09-day.jpg"
+            alt="Bild på altan med utsikt"
+          />
+        </article>
+      </section>
 
-			<p class="hero__description">
-				Hos Bonz.ai behöver du inte kompromissa mellan lyx och miljömedvetenhet. Här kan du koppla av i en modern miljö, uppleva toppmodern teknik och veta att du gör ett hållbart val. Låt oss välkomna dig till en värld där framtidens hotell inte bara är en vision – det är verklighet.
-			</p>
-
-			<p class="hero__description">
-				På Bonz.ai handlar det inte bara om att bo – det handlar om att uppleva. Våra AI-drivna rum anpassar belysning, temperatur och musik efter dina önskemål, medan vår virtuella concierge står redo att hjälpa dig med allt från bokningar till personliga rekommendationer. Utforska världen genom VR-turer eller njut av vårt smarta wellness-koncept med sömnanpassade sängar och guidad meditation. Allt är designat för att ge dig en skräddarsydd och minnesvärd vistelse.
-			</p>
-
-			<p class="hero__description">
-				Vi kombinerar teknologi med hållbarhet i allt vi gör. Från ekologiska menyer och möbler av återvunna material till koldioxidneutral energiförsörjning – varje detalj är ett steg mot en bättre framtid. Som gäst hos oss bidrar du också, genom initiativ som klimatpositiva bokningar och vårt belöningsprogram för hållbara val. Bonz.ai är mer än ett hotell – det är ett löfte om innovation, miljöansvar och lyx i harmoni.
-			</p>
-		</section>
-
-		<section class="image-grid" aria-label="Bildgrid">
-			<article class="image-grid__item" aria-label="Bild i bildgrid">
-				<img class="image-grid__image" src="./assets/photos/01-day.jpg" alt="Bild på hotellrum med stege och bord, ljus">
-			</article>
-			<article class="image-grid__item" aria-label="Bild i bildgrid">
-				<img class="image-grid__image" src="./assets/photos/02-day.jpg" alt="Bild på hotellrum med stege och bord, mörk">
-			</article>
-			<article class="image-grid__item" aria-label="Bild i bildgrid">
-				<img class="image-grid__image" src="./assets/photos/03-day.jpg" alt="Bild på hotellrum med eldstad och utsikt över vatten, ljus">
-			</article>
-			<article class="image-grid__item" aria-label="Bild i bildgrid">
-				<img class="image-grid__image" src="./assets/photos/04-day.jpg" alt="Bild på hotellrum med eldstad och utsikt över vatten, ljus">
-			</article>
-			<article class="image-grid__item" aria-label="Bild i bildgrid">
-				<img class="image-grid__image" src="./assets/photos/05-day.jpg">
-			</article>
-			<article class="image-grid__item" aria-label="Bild i bildgrid">
-				<img class="image-grid__image" src="./assets/photos/06-day.jpg">
-			</article>
-			<article class="image-grid__item" aria-label="Bild i bildgrid">
-				<img class="image-grid__image" src="./assets/photos/07-day.jpg">
-			</article>
-			<article class="image-grid__item" aria-label="Bild i bildgrid">
-				<img class="image-grid__image" src="./assets/photos/08-day.jpg">
-			</article>
-			<article class="image-grid__item" aria-label="Bild i bildgrid">
-				<img class="image-grid__image" src="./assets/photos/09-day.jpg">
-			</article>
-		</section>
-
-		<footer class="site-footer">
-			<section class="site-footer__nav">
-				<ul class="site-footer__nav-list">
-					<h1>Navigation</h1>
-					<li class="site-footer__item"><a class="site-footer__links" href="index.html">Hem</a></li>
-					<li class="site-footer__item"><a class="site-footer__links" href="boka_rum.html">Boka rum</a></li>
-					<li class="site-footer__item"><a class="site-footer__links" href="index.html">Om bonz.ai</a></li>
-				</ul>
-			</section>
-			<section class="site-footer__hitta-hit">
-				<h1>Hitta hit</h1>
-				<p>Trädvägen 13</p>
-				<p>123 45 Ek-erö</p>
-			</section>
-			<section class="site-footer__social-media">
-				<h1>Sociala medier</h1>
-				<p>Länk här</p>
-			</section>
-		</footer>
-	</div>
-</body>
+      <footer class="site-footer">
+        <section class="site-footer__nav">
+          <h1>Navigation</h1>
+          <ul class="site-footer__nav-list">
+            <li class="site-footer__item">
+              <a class="site-footer__links" href="index.html">Hem</a>
+            </li>
+            <li class="site-footer__item">
+              <a class="site-footer__links" href="boka_rum.html">Boka rum</a>
+            </li>
+            <li class="site-footer__item">
+              <a class="site-footer__links" href="index.html">Om bonz.ai</a>
+            </li>
+          </ul>
+        </section>
+        <section class="site-footer__hitta-hit">
+          <h1>Hitta hit</h1>
+          <p>Trädvägen 13</p>
+          <p>123 45 Ek-erö</p>
+        </section>
+        <section class="site-footer__social-media">
+          <h1>Sociala medier</h1>
+          <p>Länk här</p>
+        </section>
+      </footer>
+    </div>
+  </body>
 </html>

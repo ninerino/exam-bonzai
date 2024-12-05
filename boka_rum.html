@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
     <title>Bonz.ai - Boka rum</title>
   </head>
@@ -25,14 +26,14 @@
               <a class="site-header__links" href="boka_rum.html"> BOKA RUM </a>
             </li>
             <li class="site-header__item">
-              <a class="site-header__links" href="#"> OM BONZ.AI </a>
+              <a class="site-header__links" href="om_oss.html"> OM BONZ.AI </a>
             </li>
           </ul>
         </section>
       </header>
 
-      <section class="hero">
-        <section class="hero__booking">
+      <section class="hero" aria-label="Hero-sektion som visar ett formulär för att söka efter rum">
+        <section class="hero__booking" aria-label="Område för att söka efter rum">
           <section class="hero__stay-form" aria-label="Input-form för vistelse">
             <form class="hero__stay-form-input">
               <label for="stay">Ankomstdatum</label>
@@ -65,16 +66,16 @@
           </section>
         </section>
 
-        <section class="room-selection">
-          <article class="room-selection__option">
-            <img class="image-grid__image" src="./assets/photos/01-day.jpg" />
+        <section class="room-selection" aria-label="Område för att välja rum">
+          <article class="room-selection__option" aria-label="Rumsalternativ">
+            <img class="image-grid__image" src="./assets/photos/01-day.jpg" alt="Bild på hotellrum med stege och bord" />
 
-            <article class="room-selection__header">
+            <article class="room-selection__header" aria-label="Typ av rum samt kostnad för rum">
               <h2>Singelrum</h2>
               <h3>1000 kr</h3>
             </article>
 
-            <article class="room-selection__details">
+            <article class="room-selection__details" aria-label="Information om valt rum">
               <p class="room-selection__info">24 kvm</p>
               <p class="room-selection__info">Enkelsäng</p>
               <p class="room-selection__info">Dusch i rummet</p>
@@ -83,45 +84,45 @@
             <button class="cta-btn">Boka nu</button>
           </article>
 
-          <article class="room-selection__option">
+          <article class="room-selection__option" aria-label="Rumsalternativ">
             <img
               class="image-grid__image image-grid__image--room"
-              src="./assets/photos/01-day.jpg"
+              src="./assets/photos/03-day.jpg" alt="Bild på säng med utsikt över vatten"
             />
 
-            <article class="room-selection__header">
-              <h2>Singelrum</h2>
-              <h3>1000 kr</h3>
+            <article class="room-selection__header" aria-label="Typ av rum samt kostnad för rum">
+              <h2>Dubbelrum</h2>
+              <h3>2000 kr</h3>
             </article>
 
-            <article class="room-selection__details">
-              <p class="room-selection__info">24 kvm</p>
-              <p class="room-selection__info">Enkelsäng</p>
+            <article class="room-selection__details" aria-label="Information om valt rum">
+              <p class="room-selection__info">36 kvm</p>
+              <p class="room-selection__info">Två enkelsängar eller en dubbelsäng</p>
               <p class="room-selection__info">Dusch i rummet</p>
               <p class="room-selection__info">Wifi och frukost ingår</p>
             </article>
             <button class="cta-btn">Boka nu</button>
           </article>
 
-          <article class="room-selection__option">
-            <img class="image-grid__image" src="./assets/photos/01-day.jpg" />
+          <article class="room-selection__option" aria-label="Rumsalternativ">
+            <img class="image-grid__image" src="./assets/photos/05-day.jpg" alt="Bild på soffa och trappa i hotellrum"/>
 
-            <article class="room-selection__header">
-              <h2>Singelrum</h2>
-              <h3>1000 kr</h3>
+            <article class="room-selection__header" aria-label="Typ av rum samt kostnad för rum">
+              <h2>Familjerum</h2>
+              <h3>4000 kr</h3>
             </article>
 
-            <article class="room-selection__details">
-              <p class="room-selection__info">24 kvm</p>
-              <p class="room-selection__info">Enkelsäng</p>
-              <p class="room-selection__info">Dusch i rummet</p>
+            <article class="room-selection__details" aria-label="Information om valt rum">
+              <p class="room-selection__info">60 kvm</p>
+              <p class="room-selection__info">Dubbelsäng samt våningssäng</p>
+              <p class="room-selection__info">Dusch och badkar i rummet</p>
               <p class="room-selection__info">Wifi och frukost ingår</p>
             </article>
             <button class="cta-btn">Boka nu</button>
           </article>
         </section>
 
-        <section class="information">
+        <section class="information" aria-label="Allmän information om hotellets erbjudanden">
           <article class="information__included">
             <h2>Det här ingår alltid hos oss</h2>
             <ul class="information__list">
@@ -169,8 +170,8 @@
 
       <footer class="site-footer">
         <section class="site-footer__nav">
+          <h1>Navigation</h1>
           <ul class="site-footer__nav-list">
-            <h1>Navigation</h1>
             <li class="site-footer__item">
               <a class="site-footer__links" href="index.html">Hem</a>
             </li>
@@ -178,7 +179,7 @@
               <a class="site-footer__links" href="boka_rum.html">Boka rum</a>
             </li>
             <li class="site-footer__item">
-              <a class="site-footer__links" href="index.html">Om bonz.ai</a>
+              <a class="site-footer__links" href="om_oss.html">Om bonz.ai</a>
             </li>
           </ul>
         </section>
@@ -189,7 +190,9 @@
         </section>
         <section class="site-footer__social-media">
           <h1>Sociala medier</h1>
-          <p>Länk här</p>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
         </section>
       </footer>
     </div>

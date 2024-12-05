@@ -52,15 +52,15 @@
 
 .site-header__links {
   text-decoration: none;
+  display: block;
   color: black;
-}
-
-.site-header__item:hover {
-  background-color: #34495e;
+  padding: 0.5rem;
 }
 
 .site-header__links:hover {
-  color: white;
+	background-color: #34495e;
+	color: white;
+	padding: 0.5rem;
 }
 
 /** Site Hero **/
@@ -183,6 +183,10 @@
   color: white;
 }
 
+.fa-brands {
+	font-size: 25px;
+}
+
 /** Media Queries för index.html **/
 
 @media (max-width: 900px) {
@@ -269,14 +273,14 @@
 
 /** Media queries för boka_rum.html */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .room-selection {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .room-selection {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

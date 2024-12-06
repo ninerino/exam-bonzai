@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="sv">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
     <title>Bonz.ai - Boka rum</title>
   </head>
   <body>
@@ -15,7 +15,7 @@
             class="site-header__image-img"
             src="./assets/logo/bonz.ai-logo-black-landscape.png"
             alt="Bild på bonz.ais logotyp samt texten bonz.ai"
-          />
+          >
         </section>
         <section class="site-header__nav" aria-label="Navigationsmeny">
           <ul class="site-header__list">
@@ -37,10 +37,10 @@
           <section class="hero__stay-form" aria-label="Input-form för vistelse">
             <form class="hero__stay-form-input">
               <label for="stay">Ankomstdatum</label>
-              <input type="date" class="input" id="stay" min="2024-11-26" />
+              <input type="date" class="input" id="stay" min="2024-11-26">
 
               <label for="leave">Avresedatum</label>
-              <input type="date" class="input" id="leave" max="2024-12-24" />
+              <input type="date" class="input" id="leave" max="2024-12-24">
             </form>
 
             <form class="hero__stay-form-input">
@@ -68,7 +68,8 @@
 
         <section class="room-selection" aria-label="Område för att välja rum">
           <article class="room-selection__option" aria-label="Rumsalternativ">
-            <img class="image-grid__image" src="./assets/photos/01-day.jpg" alt="Bild på hotellrum med stege och bord" />
+            <!-- Undantagsfall här, är medveten om att det inte är korrekt BEM men för att spara lite kod så gör jag detta -->
+            <img class="image-grid__image" src="./assets/photos/01-day.jpg" alt="Bild på hotellrum med stege och bord">
 
             <article class="room-selection__header" aria-label="Typ av rum samt kostnad för rum">
               <h2>Singelrum</h2>
@@ -88,7 +89,7 @@
             <img
               class="image-grid__image image-grid__image--room"
               src="./assets/photos/03-day.jpg" alt="Bild på säng med utsikt över vatten"
-            />
+            >
 
             <article class="room-selection__header" aria-label="Typ av rum samt kostnad för rum">
               <h2>Dubbelrum</h2>
@@ -105,7 +106,7 @@
           </article>
 
           <article class="room-selection__option" aria-label="Rumsalternativ">
-            <img class="image-grid__image" src="./assets/photos/05-day.jpg" alt="Bild på soffa och trappa i hotellrum"/>
+            <img class="image-grid__image" src="./assets/photos/05-day.jpg" alt="Bild på soffa och trappa i hotellrum">
 
             <article class="room-selection__header" aria-label="Typ av rum samt kostnad för rum">
               <h2>Familjerum</h2>
@@ -127,23 +128,23 @@
             <h2>Det här ingår alltid hos oss</h2>
             <ul class="information__list">
               <li>
-                <strong>Gratis Wi-Fi</strong> – Hög hastighet för att hålla dig
+                <span class="information__highlight">Gratis Wi-Fi</span> – Hög hastighet för att hålla dig
                 uppkopplad.
               </li>
               <li>
-                <strong>Frukostbuffé</strong> – Njut av en hälsosam och varierad
+                <span class="information__highlight">Frukostbuffé</span> – Njut av en hälsosam och varierad
                 frukost varje morgon.
               </li>
               <li>
-                <strong>24/7 Digital Concierge</strong> – Få hjälp när som helst
+                <span class="information__highlight">24/7 Digital Concierge</span> – Få hjälp när som helst
                 via vår AI-assistent direkt i mobilen.
               </li>
               <li>
-                <strong>Daglig städning</strong> – Rummen städas varje dag för
+                <span class="information__highlight">Daglig städning</span> – Rummen städas varje dag för
                 att säkerställa din komfort.
               </li>
               <li>
-                <strong>Smarta rumsfunktioner</strong> – Justera belysning,
+                <span class="information__highlight">Smarta rumsfunktioner</span> – Justera belysning,
                 temperatur och musik med vår app.
               </li>
             </ul>
@@ -152,15 +153,15 @@
             <h2>Våra unika funktioner</h2>
             <ul class="information__list">
               <li>
-                <strong>Kontaktlös incheckning & utcheckning</strong> – Checka
+                <span class="information__highlight">Kontaktlös incheckning & utcheckning</span> – Checka
                 in och ut när du vill, helt utan krångel.
               </li>
               <li>
-                <strong>Personliga tips</strong> – Restauranger, aktiviteter och
+                <span class="information__highlight">Personliga tips</span> – Restauranger, aktiviteter och
                 sevärdheter anpassade för dig.
               </li>
               <li>
-                <strong>Automatiserade rum</strong> – Våra rum lär sig dina
+                <span class="information__highlight">Automatiserade rum</span> – Våra rum lär sig dina
                 rutiner och anpassar sig efter dina behov.
               </li>
             </ul>

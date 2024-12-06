@@ -1,20 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
+/** Allmänna kommentarer
+
+Valt att försöka hålla koden till ett minimum med fokus på bra BEM och få media queries. Lyckades få till det så att jag inte behövde någon extra CSS alls för om_oss.html exempelvis. Hade detta varit en sida för produktion så hade jag givetvis gjort lite extra, exempelvis klickbara länkar för sociala medier, loggan högst upp klickbar och kanske framför allt lärt mig bra design...
+
+**/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   --main-bg-color: #ecf0f1;
+  --secondary-bg-color: #34495e;
   --main-text-color: #2c3e50;
   --secondary-text-color: #7f8c8d;
 }
 
 .site-wrapper {
   background-color: var(--main-bg-color);
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
 }
 
-/** index.html **/
+/*********************** index.html ***********************/
 
 /** Site Header **/
 
@@ -24,6 +31,7 @@
   justify-content: space-around;
 }
 
+/** Skulle också kunna heta site-header__logo **/
 .site-header__image {
   display: flex;
   justify-content: center;
@@ -58,7 +66,7 @@
 }
 
 .site-header__links:hover {
-	background-color: #34495e;
+	background-color: var(--secondary-bg-color);
 	color: white;
 	padding: 0.5rem;
 }
@@ -72,11 +80,12 @@
   justify-content: center;
 }
 
+/** Söka rum **/
 .hero__booking {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #34495e;
+  background-color: var(--secondary-bg-color);
   width: 100%;
   height: auto;
   color: white;
@@ -103,7 +112,7 @@
   border-radius: 5px;
   padding: 0.2rem 0.5rem;
   background-color: white;
-  color: #34495e;
+  color: var(--secondary-bg-color);
 }
 
 .hero__title {
@@ -115,6 +124,8 @@
   text-align: center;
 }
 
+
+/** Brööötexten **/
 .hero__description {
   font-family: "Raleway", serif;
   margin-bottom: 1.5rem;
@@ -163,7 +174,7 @@
 /** Footer **/
 
 .site-footer {
-  background-color: #34495e;
+  background-color: var(--secondary-bg-color);
   display: flex;
   justify-content: space-around;
   padding: 1.5rem;
@@ -228,8 +239,9 @@
     gap: 1rem;
   }
 }
-/** ------------- boka_rum.html ------------- **/
+/*********************** boka_rum.html ***********************/
 
+/** Välja rum **/
 .room-selection {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -259,6 +271,8 @@
   margin-bottom: 0.5rem;
 }
 
+
+/** Information om hotellet **/
 .information {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -269,6 +283,10 @@
 .information__list {
   list-style-type: none;
   margin: 1rem 1rem 2rem 0;
+}
+
+.information__highlight {
+  font-weight: bold;
 }
 
 /** Media queries för boka_rum.html */
